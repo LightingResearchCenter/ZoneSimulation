@@ -9,14 +9,14 @@ clear
 load('BaseCase.mat');
 
 %% Set names
-simName = 'Outline, narrow';
+simName = 'Outline, wide';
 folderName = 'Outlines';
 
 %% Make directory to save to
 mkdir(folderName);
 
 %% Set conditions
-[Sim.Luminaires.View] = deal('narrow');
+[Sim.Luminaires.View] = deal('wide');
 [Sim.Zones.DimAfter] = deal(duration(0,1,0));
 [Sim.Zones.OffAfter] = deal(duration(0,1,0));
 
@@ -30,6 +30,6 @@ mkdir(folderName);
     ts = char(Sim.Clock);
     tBlock.String = simName;
     drawnow;
-    filename = fullfile(folderName,'outline narrow');
+    filename = fullfile(folderName,'outline wide');
     print(filename,'-djpeg','-r200');
 

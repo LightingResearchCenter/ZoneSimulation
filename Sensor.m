@@ -130,10 +130,10 @@ classdef Sensor < SimulationObject & Equipment
                 obj.Graphic.Visible = 'on';
                 obj.Graphic.FaceAlpha = 0.5;
             else
-                obj.Graphic.Visible = 'off';
-% obj.Graphic.Visible = 'on';
-%                 obj.Graphic.FaceAlpha = 0;
-%                 obj.Graphic.EdgeColor = [66 142 189]/255;
+%                 obj.Graphic.Visible = 'off';
+                obj.Graphic.Visible = 'on';
+                obj.Graphic.FaceAlpha = 0;
+                obj.Graphic.EdgeColor = [66 142 189]/255;
             end
         end
     end

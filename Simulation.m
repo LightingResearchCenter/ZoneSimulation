@@ -3,7 +3,7 @@ classdef Simulation < SimulationObject
     %   Detailed explanation goes here
     
     properties
-        Zones       Zone
+        Zones       %Zone
         Luminaires	Luminaire
         Sensors     Sensor
         Clock

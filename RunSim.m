@@ -21,7 +21,7 @@ end
 
 %% Analyze simulation
 superState = vertcat(Sim.Luminaires.State);
-trofferMinutes = sum(superState == 1);
+trofferMinutes = sum(superState);
 disp(folderName)
 display(trofferMinutes)
 
